@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Task #2</title>
+     <meta charset="UTF-8">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+     <!-- Optional theme -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+     <!-- Latest compiled and minified JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+     <script src="task2.js"></script>
+     <style>
+          .warning{
+               border-color: #fb0303;
+               outline: 0;
+               -webkit-box-shadow: inset 0 1px 1px rgba(198, 126, 114, 0.1),0 0 8px rgba(233, 102, 102, 0.6);
+               box-shadow: inset 0 1px 1px rgba(198, 126, 114, 0.1),0 0 8px rgba(233, 102, 102, 0.6);
+          }
+     </style>
+</head>
+<body>
+     <div class="container">
+          <form action="" id="form" method="post">
+               <div class="row">
+                    <div class="col-md-8">
+                         <input type="text" name="first" id="firstInp" placeholder="Що завгодно" class="form-control">
+                         <input type="text" name="second" id="secondInp" placeholder="Обовязкове поле" required class="form-control">
+                         <input type="text" name="third" id="thirdInp" placeholder="Що завгодно" class="form-control">
+                         <input type="text" name="fourth" id="fourthInp" placeholder="Що завгодно" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                         <div id="first" class="form-control"></div>
+                         <div id="second" class="form-control"></div>
+                         <div id="third" class="form-control"></div>
+                         <div id="fourth" class="form-control"></div>
+                    </div>
+                    <hr />
+                    <button type="submit" class="btn btn-block" onclick='start()'>Відправити</button>
+               </div>
+          </form>
+     </div>
+
+     <div align="center" class="embed-responsive embed-responsive-16by9">
+          <p>
+               <strong>Обробка події онклік НЕ підходить обов"язкова умова відправка форми та обробка серіалізованих даних</strong>
+          </p>
+          <video autoplay loop class="embed-responsive-item">
+               <source src="video.mp4" type="video/mp4">
+          </video>
+     </div>
+</body>
+</html>
